@@ -1,13 +1,26 @@
+:root {
+  --h1: 5rem;
+  --h2: 2.5rem;
+  --h3: 2rem;
+  --p: 1.5rem;
+}
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
-body {
-  font-family: 'Montserrat', sans-serif;
+header {
+  position: relative;
+  height: min(100dvh,100vh);
+  background-color: lightblue;
+  background-image: linear-gradient(rgba(20, 20, 20, 0.5),rgba(32, 32, 32, 0.4)),url('../images/pexels-royal-anwar-450214.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 li {
@@ -15,9 +28,112 @@ li {
 }
 
 a,
-a:active,
-a:visited {
+a:visited,
+a:active {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
+header {
+  position: relative;
+}
+.hero-navbar {
+  width: 100%;
+  height: 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  /* background-color: lightcoral; */
+}
+
+.hero-logo {
+  width: 12rem;
+  height: auto;
+}
+
+.hero-menu {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.hero-nav-links {
+  font-size: var(--p);
+  font-weight: 600;
+}
+
+.hero-heading {
+ /* position: absolute;
+ top: 50%;
+ right: 50%;  */
+ display: grid;
+ gap: 0.5rem;
+ justify-content: center;
+ align-items: center;
+ margin: 10rem 1rem;
+ color: #fff;
+ text-align: center;
+}
+.hero-heading h1 {
+  font-size: var(--h1);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.hero-heading h3 {
+  font-size: var(--h3);
+}
+
+.about-container {
+  position: relative;
+  color: #fff;
+  background-color: #413F3F;
+  text-align: center;
+}
+.about-content {
+  position: relative;
+  display: grid;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 0;
+}
+.about-content h2 {
+  font-size: var(--h2);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+.about-content p {
+  position: relative;
+  font-size: var(--p);
+  /* margin: 1.5rem 1rem 1rem 1rem; */
+}
+
+.portfolio-container {
+  background-color: #FFFCFC;
+  align-items: center;
+  text-align: center;
+}
+.portfolio-content h2 {
+  font-size: var(--h2);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 3rem;
+  color: #348FF9;
+}
+.img-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 0 12rem;
+  margin: 2rem;
+}
+.img-box img{
+  width: 15rem;
+  height: 15rem;
+}
