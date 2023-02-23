@@ -142,13 +142,46 @@ header {
     display: none;
   }
   .image-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .contact-container {
     grid-template-columns: 1fr;
   }
 }
 
+@media (min-width: 220px) and (max-width: 599px){
+  .hero-menu {
+    display: none;
+  }
+  header {
+    height: 60vh;
+  }
+  .hero-heading {
+    margin: 5rem;
+  }
+  .hero-heading h1 {
+    font-size: 3rem;
+  }
+  .hero-heading h2 {
+    margin: 0 0 5rem 0;
+  }
+  .image-container {
+    grid-template-columns: 1fr;
+  }
+  .contact-container {
+    grid-template-columns: 1fr;
+    margin: -4rem;
+  }
+  .contact-me span {
+    line-height: 2.5rem;
+  }
+  .form input, .form textarea {
+    width: 90%;
+  }
+  .portfolio-button {
+    margin: 3rem 0 7rem 0;
+  }
+}
 
 .thumbnail {
   width: 15rem;
@@ -160,7 +193,7 @@ header {
   border: none;
   color: #fff;
   padding: 0.5rem 1rem;
-  margin: 3rem 0;
+  margin: 3rem 0 7rem 0;
   font-size: var(--p);
   border-radius: 2rem;
   cursor: pointer;
@@ -183,6 +216,9 @@ header {
 @media (min-width: 200px) and (max-width: 800px){
   .contact-container {
     grid-template-columns: 1fr;
+  }
+  .contact-button {
+    margin: 0 0 5rem 0;
   }
 }
 @media (min-width: 801px) and (max-width: 1200px){
